@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font: normal 16px/1.2 "Rubik", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #222222;
+  color: rgb(180, 180, 180);
+}
+
+.page-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(218, 82, 19);
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.role-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.role {
+  margin: 30px 30px 10px 30px;
+  padding: 2px 20px;
+}
+
+/* adding text stroke to improve accessibilty : role backgrounds are light in color */
+.role-name {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  /* font-weight: bold; */
+  font-size: 1.2em;
+}
+
+.icon {
+  margin: 10px 20px 0px 0px;
+  height: 40px;
+  text-align: right;
+}
+.card {
+  border: grey 1px solid;
+  flex: 1 1 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.circular {
+  border-radius: 50%;
+}
+
+.bio {
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.role-button {
+  flex: 1 1 50px;
+  margin: 0px 10px;
+  padding: 10px;
+  background-color: #222222;
+  color: beige;
+  border: none;
+}
+
+.role-button:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  color: rgb(204, 165, 35);
+}
+
+.role-button__active {
+  cursor: pointer;
+  font-weight: bolder;
+  color: rgb(204, 131, 22);
+}
+
+.flex-container__buttons {
+  width: 60%;
+}

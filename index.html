@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+
+<body>
+    <!-- inline styling and onclick functionality for reloading the page -->
+    <h1 onclick="window.location.reload()" style="cursor: pointer;">Team Members</h1>
+    <div class="page-container">
+        <!-- This is where the buttons will be shown -->
+        <div class="flex-container flex-container__buttons" id="role-buttons">
+            <button id="showAll" class="role-button role-button__active" onclick="filter('showAll')">All</button>
+        </div>
+        <!-- This is where the employee cards will be shown -->
+        <div class="flex-container" id="employee-list">
+        </div>
+    </div>
+</body>
+
+</html>
